@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airport-checkin-simulation-optimization"
+version = "0.1.0"
+description = "Simulation optimization for airport check-in staffing with SimPy, Optuna, common random numbers, and out-of-sample validation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Jors Academy" }
+]
+dependencies = [
+  "numpy>=1.26,<3",
+  "optuna>=4.0,<5",
+  "scipy>=1.11,<2",
+  "simpy>=4.1,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+]
+
+[project.scripts]
+airport-checkin-simopt = "airport_checkin_simopt.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
