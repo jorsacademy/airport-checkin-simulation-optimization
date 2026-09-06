@@ -123,4 +123,4 @@ GitHub Actions runs the suite on Python 3.10 and 3.12.
 
 ## License
 
-MIT
+This repository is licensed under the **JORS Academy Non-Commercial Source License 1.0**. Commercial use is prohibited without a separate prior written commercial license. See [`LICENSE`](LICENSE) for the complete terms.
